@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import InventorySection from './components/InventorySection'
 import VoucherSection from './components/VoucherSection'
+import { Toaster } from 'sonner'
 
  
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <InventorySection/>
         <VoucherSection/>
       </section>
+      <Toaster position="bottom-right" richColors={true}/>
     </main>
     
   )
