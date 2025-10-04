@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProductCard from './ProductCard';
 
 const ProductCardList = () => {
 
-  const products = [
+  const [products, setProducts] = useState([
   {
     id: 1,
     category: "Bread",
@@ -126,7 +126,7 @@ const ProductCardList = () => {
     price: 8500,
     image: "/images/17.png",
   },
-];
+]);
 
   return (
     <div className='grid grid-cols-3 gap-5 px-3 py-2'>
